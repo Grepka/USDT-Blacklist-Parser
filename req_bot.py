@@ -22,7 +22,7 @@ def send_message(token_bot, address_blocked_wallet, timestamp, balance, blockcha
         sign = 'USDT TRC'
 
     balance = round(balance, 3)
-    block_wallet_sum_ballance = round(block_wallet_sum_ballance, 3)
+    block_wallet_sum_ballance = round(block_wallet_sum_ballance, 3) - 1
 
     balance = "{:,}".format(balance)
     block_wallet_sum_ballance = "{:,}".format(block_wallet_sum_ballance)
